@@ -24,6 +24,7 @@ export default {
 			this.items = response.data;
 		}).catch(err => {
 			this.$toasted.error('???Error');
+			console.error(err);
 		});
 	},
 	components: {

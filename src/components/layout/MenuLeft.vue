@@ -8,13 +8,19 @@
 import MenuItem from '@layout/MenuItem';
 export default {
 	name: 'MenuLeft',
+	prop: {
+		url: {
+			type: String,
+			default: '/menu1'
+		}
+	},
 	data() {
 		return {
 			items: []
 		};
 	},
 	created() {
-		this.$http.get('/menu1').then(response => {
+		this.$http.get(this.url).then(response => {
 			this.items = response.data;
 		}).catch(err => {
 			this.$toasted.error('???Error');

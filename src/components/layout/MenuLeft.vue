@@ -8,10 +8,10 @@
 import MenuItem from '@layout/MenuItem';
 export default {
 	name: 'MenuLeft',
-	prop: {
+	props: {
 		url: {
 			type: String,
-			default: '/menu1'
+			default: '/menu'
 		}
 	},
 	data() {

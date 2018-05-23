@@ -1,6 +1,5 @@
 <template>
 	<div>
-		<slot name="header"></slot>
 		<slot name="left-menu"></slot>
 		<slot></slot>
 	</div>

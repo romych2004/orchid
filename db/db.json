@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "text": "ohoho"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "menu": [
+	  {
+		  "id": 1,
+		  "label": "Home",
+		  "href": "/"
+	  },
+	  {
+		  "id": 2,
+		  "label": "Messages",
+		  "href": "/messages"
+	  },
+	  {
+		  "id": 3,
+		  "label": "Users",
+		  "href": "users"
+	  }
+  ]
+}

@@ -1,12 +1,12 @@
 <template>
 	<div>
-		Files
+		Users
 	</div>
 </template>
 
 <script>
 export default {
-	name: 'Files',
+	name: 'Users',
 	created() {
 
 	}

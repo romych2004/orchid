@@ -39,6 +39,10 @@ export default new Router({
 					path: 'groups',
 					name: 'home/groups',
 					component: () => import('@pages/home/groups/')
+				}, {
+					path: 'files',
+					name: 'home/files',
+					component: () => import('@pages/home/files/')
 				}
 			]
 		}

@@ -1,6 +1,7 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import './assets/styles/main.scss';
+import 'element-ui/lib/theme-chalk/index.css';
 
 import Vue from 'vue';
 import App from './App';
@@ -8,7 +9,9 @@ import router from './router';
 
 import axios from 'axios';
 import moment from 'moment';
-import Toasted from 'vue-toasted';
+import ElementUI from 'element-ui';
+import locale from 'element-ui/lib/locale';
+import lang from 'element-ui/lib/locale/lang/en';
 
 Vue.config.productionTip = false;
 
@@ -30,21 +33,12 @@ const axiosInstance = axios.create(axiosConfig);
 	return Promise.reject(error);
 }); */
 
-const toastedConfig = {
-	position: 'top-right',
-	duration: 10000,
-	action: {
-		text: '???Close',
-		onClick: (e, toastObject) => {
-			toastObject.goAway(0);
-		}
-	}
-};
+locale.use(lang);
 
 /**
  * 			VUE EXTENTIONS
  */
-Vue.use(Toasted, toastedConfig);
+Vue.use(ElementUI);
 
 Object.defineProperty(Vue.prototype, '$date', { value: moment });
 Object.defineProperty(Vue.prototype, '$http', {

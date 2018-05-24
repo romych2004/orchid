@@ -1,7 +1,8 @@
 <template>
 	<div>
 		Feed1
-		<button @click="test">Toaster</button>
+		<el-button type="primary" @click="test">Primary</el-button>
+		<el-button icon="el-icon-search" circle></el-button>
 	</div>
 </template>
 
@@ -9,9 +10,7 @@
 export default {
 	name: 'Feed',
 	methods: {
-		test: function() {
-			this.$toasted.success('Holla !!');
-		}
+		test: function() {}
 	},
 	created() {
 

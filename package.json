@@ -15,9 +15,9 @@
     "json-server": "json-server --watch db/db.json"
   },
   "dependencies": {
+    "element-ui": "^2.3.9",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1",
-    "vue-toasted": "^1.1.24"
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

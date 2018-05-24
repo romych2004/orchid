@@ -1,7 +1,11 @@
 <template>
-	<div>
-		<slot name="left-menu"></slot>
-		<slot></slot>
+	<div class="main-layout-wrapper">
+		<div class="main-layout">
+			<div class="left-menu">
+				<slot name="left-menu"></slot>
+			</div>
+			<slot></slot>
+		</div>
 	</div>
 </template>
 
@@ -13,3 +17,7 @@ export default {
 	}
 };
 </script>
+
+<style>
+
+</style>

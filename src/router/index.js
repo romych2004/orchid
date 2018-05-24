@@ -18,7 +18,7 @@ export default new Router({
 				{
 					path: '404',
 					name: '404',
-					component: () => import('@pages/404/')
+					component: () => import('@common/404/')
 				}, {
 					path: '',
 					name: 'home',

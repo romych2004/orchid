@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="menu">
 		<menu-item v-for="item in items" :key="item.id" v-bind="item"></menu-item>
 	</div>
 </template>

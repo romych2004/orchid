@@ -1,5 +1,7 @@
 <template>
-	<router-link :to="href">{{label}}</router-link>
+	<div class="menu-item">
+		<router-link :to="href">{{label}}</router-link>
+	</div>
 </template>
 
 <script>
@@ -8,3 +10,9 @@ export default {
 	props: ['id', 'href', 'label']
 };
 </script>
+
+<style lang="scss">
+	.menu-item {
+		color: $red;
+	}
+</style>

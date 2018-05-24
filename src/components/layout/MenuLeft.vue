@@ -1,7 +1,7 @@
 <template>
-	<div class="menu">
+	<el-menu :router="true">
 		<menu-item v-for="item in items" :key="item.id" v-bind="item"></menu-item>
-	</div>
+	</el-menu>
 </template>
 
 <script>
@@ -23,7 +23,6 @@ export default {
 		this.$http.get(this.url).then(response => {
 			this.items = response.data;
 		}).catch(err => {
-			this.$toasted.error('???Error');
 			console.error(err);
 		});
 	},

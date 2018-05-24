@@ -1,6 +1,6 @@
 <template>
 	<div id="app">
-		<el-container>
+		<el-container class="is-vertical">
 			<page-header></page-header>
 			<router-view/>
 		</el-container>
@@ -17,11 +17,9 @@ export default {
 };
 </script>
 
-<style>
-#app {
-	font-family: 'Avenir', Helvetica, Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	color: #2c3e50;
-}
+<style lang="scss">
+	#app {
+		max-width: $max-width;
+		margin: 0 auto;
+	}
 </style>
